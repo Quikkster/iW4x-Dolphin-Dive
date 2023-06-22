@@ -4,8 +4,8 @@
 
 init()
 {
-    setDvarIfUninitialized("allowDophinDive", 1);
-    level.allowDophinDive = getDvarInt("allowDophinDive");
+    setDvarIfUninitialized("allowDolphinDive", 1);
+    level.allowDolphinDive = getDvarInt("allowDolphinDive");
 
 	thread onPlayerConnected();
 }
@@ -16,7 +16,7 @@ onPlayerConnected() {
 	for(;;) {
 		level waittill( "connected", player );
 
-        if( level.allowDophinDive )
+        if( level.allowDolphinDive )
 		    player thread dolphinDive();
     }
 }
