@@ -2,6 +2,8 @@
 #include maps\mp\_utility;
 #include maps\mp\gametypes\_hud_util;
 
+/* ☆☆☆ iW4x Dolphin Dive Mod by Quikkster ☆☆☆ */
+
 init()
 {
     setDvarIfUninitialized("allowDolphinDive", 1);
